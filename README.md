@@ -1,12 +1,16 @@
 <h3 align="center">
   <br />
-  <img src="https://user-images.githubusercontent.com/168240/114315374-8ff5b480-9ab3-11eb-8323-b83858e8e74f.png" alt="logo" width="800" />
+  <!-- <img src="https://user-images.githubusercontent.com/168240/114315374-8ff5b480-9ab3-11eb-8323-b83858e8e74f.png" alt="logo" width="800" /> -->
   <br />
   <br />
   <br />
 </h3>
 
 # Perl for Python Developers
+
+<https://wiki.python.org/moin/PerlPhrasebook>
+
+<http://pleac.sourceforge.net/>
 
 > Examples of [Golang](https://golang.org/) examples compared to [Node.js](https://nodejs.org/) for learning
 
