@@ -92,7 +92,7 @@ echo "DevOps" "is great!"
 
 ```perl
 #!/usr/bin/env perl
-use v5.26;
+use v5.10;
 use strict;
 use warnings;
 
