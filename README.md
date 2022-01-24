@@ -1,14 +1,7 @@
 
 # Perl|Python|Go for DevOps
 
-URLs:
-
-- <https://golangprojectstructure.com/12-powerful-linux-bash-commands-with-go/>
-- <https://wiki.python.org/moin/PerlPhrasebook>
-- <http://pleac.sourceforge.net/>
-- <https://github.com/miguelmota/golang-for-nodejs-developers>
-
-[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/golang-for-nodejs-developers/master/LICENSE)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## contents
 
@@ -176,6 +169,15 @@ func main() {
 	}
 }
 ```
+
+**[⬆ back to top](#contents)**
+
+## urls
+
+- <https://golangprojectstructure.com/12-powerful-linux-bash-commands-with-go/>
+- <https://wiki.python.org/moin/PerlPhrasebook>
+- <http://pleac.sourceforge.net/>
+- <https://github.com/miguelmota/golang-for-nodejs-developers>
 
 **[⬆ back to top](#contents)**
 
