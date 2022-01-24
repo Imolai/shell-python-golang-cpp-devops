@@ -76,6 +76,7 @@ say 'DevOps ', 'is great!';
 ### Python
 
 ```python
+print('DevOps', 'is great!')
 ```
 
 ### Go
@@ -155,17 +156,22 @@ import (
 func main() {
 	filename := "test.txt"
 
-	readFile, err := os.Open(filename)
+	fh, err := os.Open(filename)
 	if err != nil {
 		fmt.Println(err)
 	}
-	defer readFile.Close()
+	defer fh.Close()
 
-	fileScanner := bufio.NewScanner(readFile)
-	fileScanner.Split(bufio.ScanLines)
+	scanner := bufio.NewScanner(fh)
+	scanner.Split(bufio.ScanLines)
+	var lines []string
 
-	for fileScanner.Scan() {
-		fmt.Println(fileScanner.Text())
+	for scanner.Scan() {
+		lines = append(lines, scanner.Text())
+	}
+
+	for _, line := range lines {
+		fmt.Println(line)
 	}
 }
 ```
