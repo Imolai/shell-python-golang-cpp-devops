@@ -1,3 +1,5 @@
 *.txt
 .vim/
 .vscode/
+README.src.md
+_generate_README_md.pl
