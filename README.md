@@ -1,179 +1,54 @@
-<h3 align="center">
-  <br />
-  <!-- <img src="https://user-images.githubusercontent.com/168240/114315374-8ff5b480-9ab3-11eb-8323-b83858e8e74f.png" alt="logo" width="800" /> -->
-  <br />
-  <br />
-  <br />
-</h3>
 
-# Perl for Python Developers
+# Perl|Python|Go for DevOps
 
-<https://wiki.python.org/moin/PerlPhrasebook>
+URLs:
 
-<http://pleac.sourceforge.net/>
-
-> Examples of [Golang](https://golang.org/) examples compared to [Node.js](https://nodejs.org/) for learning
+- <https://wiki.python.org/moin/PerlPhrasebook>
+- <http://pleac.sourceforge.net/>
+- <https://github.com/miguelmota/golang-for-nodejs-developers>
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/golang-for-nodejs-developers/master/LICENSE)
-[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
-This guide full of examples is intended for people learning Go that are coming from Node.js, although the vice versa can work too. This is not meant to be a complete guide and it is assumed that you've gone through the [Tour of Go](https://tour.golang.org/) tutorial. This guide is meant to be barely good enough to help you at a high level understand how to do *X* in *Y* and doing further learning on your own is of course required.
+## contents
 
-## Contents
-
-- [Examples](#examples)
+- [Perl|Python|Go for DevOps](#perlpythongo-for-devops)
+  - [Examples](#examples)
   - [comments](#comments)
-  - [printing](#printing)
-  - [logging](#logging)
-  - [variables](#variables)
-  - [types](#types)
-    - [bool](#types)
-    - [number](#types)
-    - [string](#types)
-    - [array](#types)
-    - [object](#types)
-    - [function](#types)
-  - [type check](#type-check)
-  - [interpolation](#interpolation)
-  - [if/else](#ifelse)
-    - [ternary](#ifelse)
-  - [for](#for)
-  - [while](#while)
-  - [switch](#switch)
-  - [arrays](#arrays)
-    - [slicing](#arrays)
-    - [copying](#arrays)
-    - [appending](#arrays)
-    - [prepending](#arrays)
-  - [uint8 arrays](#uint8-arrays)
-  - [array iteration](#array-iteration)
-    - [looping](#array-iteration)
-    - [mapping](#array-iteration)
-    - [filtering](#array-iteration)
-    - [reducing](#array-iteration)
-	- [sorting](#array-sorting)
-  - [buffers](#buffers)
-    - [allocate](#buffers)
-    - [big endian](#buffers)
-    - [little endian](#buffers)
-    - [hex](#buffers)
-    - [compare](#buffers)
-    - [equals](#buffers)
-  - [maps](#maps)
-    - [iteration](#maps)
-  - [objects](#objects)
-  - [functions](#functions)
-  - [default values](#default-values)
-  - [destructuring](#destructuring)
-  - [spread operator](#spread-operator)
-  - [rest operator](#rest-operator)
-  - [swapping](#swapping)
-  - [classes](#classes)
-    - [constructors](#classes)
-    - [instantiation](#classes)
-    - ["this"](#classes)
-  - [generators](#generators)
-  - [datetime](#datetime)
-    - [parsing](#datetime)
-    - [formatting](#datetime)
-    - [unix timestamp](#datetime)
-  - [timeout](#timeout)
-  - [interval](#interval)
-  - [IIFE](#iife)
-  - [files](#files)
-    - [creating](#files)
-    - [opening](#files)
-    - [writing](#files)
-    - [reading](#files)
-    - [closing](#files)
-    - [deleting](#files)
-    - [file descriptors](#files)
-  - [json](#json)
-    - [parse](#json)
-    - [stringify](#json)
-  - [big numbers](#big-numbers)
-    - [uint](#big-numbers)
-    - [string](#big-numbers)
-    - [hex](#big-numbers)
-    - [buffers](#big-numbers)
-    - [compare](#buffers)
-    - [equals](#buffers)
-  - [promises](#promises)
-    - [then](#promises)
-    - [all](#promises)
-  - [async/await](#async-await)
-  - [streams](#streams)
-    - [reading](#streams)
-    - [writing](#streams)
-  - [event emitter](#event-emitter)
-  <!--
-    - [transform](#streams)
-  - [concurrency](#concurrency)
-    - [threads](#concurrency)
-    - [forking](#concurrency)
-  - [message passing](#message-passing)
-  - [first-class functions](#first-class-functions)
-  -->
-  - [errors](#errors)
-  - [try/catch](#trycatch)
-  - [exceptions](#exceptions)
-  - [regex](#regex)
-  - [exec (sync)](#exec-sync)
-  - [exec (async)](#exec-async)
-  - [tcp server](#tcp-server)
-  - [udp server](#udp-server)
-  - [http server](#http-server)
-  - [url parse](#url-parse)
-  - [gzip](#gzip)
-    - [compress](#gzip)
-    - [decompress](#gzip)
-  - [dns](#dns)
-    - [ip lookup](#dns)
-    - [mx lookup](#dns)
-    - [txt lookup](#dns)
-  - [crypto](#crypto)
-    - [sha256](#crypto)
-  - [env vars](#env-vars)
-  - [cli args](#cli-args)
-  - [cli flags](#cli-flags)
-  - [stdout](#stdout)
-  - [stderr](#stderr)
-  - [stdin](#stdin)
-  - [modules](#modules)
-    - [installing](#modules)
-    - [updating](#modules)
-    - [removing](#modules)
-    - [importing](#modules)
-    - [exporting](#modules)
-    - [publishing](#modules)
-  - [stack trace](#stack-trace)
-  - [databases](#databases)
-    - [sqlite3](#databases)
-  - [testing](#testing)
-  - [benchmarking](#benchmarking)
-  - [documentation](#documentation)
-- [Contributing](#contributing)
-- [License](#license)
+    - [Perl](#perl)
+    - [Python](#python)
+    - [Go](#go)
+    - [printing](#printing)
+      - [Node.js](#nodejs)
+      - [Go](#go-1)
 
-## Examples
+## examples
+---
+All sample code is available in [src/](src/)
 
-All sample code is available in [examples/](examples/)
-
-### comments
+## comments
 ---
 
-#### Node.js
+### Perl
 
-```node
-// this is a line comment
+```perl
+# this is a line comment
 
-/*
+=pod
  this is a block comment
-*/
+=cut
 ```
 
-#### Go
+### Python
+
+```python
+# this is a line comment
+
+'''
+ this is a block comment
+'''
+```
+
+### Go
 
 ```go
 package main
@@ -188,6 +63,8 @@ func main() {
 ```
 
 **[⬆ back to top](#contents)**
+
+TODO: rework from here
 
 ### printing
 ---
