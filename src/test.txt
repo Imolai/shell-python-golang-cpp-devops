@@ -1,0 +1,10 @@
+
+Test text file
+
+It contains some lines of text.
+They are short and for testing purpose.
+Nothing special, just strings.
+And numbers: 1, 2, 3, 4, 5.
+Special characters: $@%!_<>()[]{}.
+End.
+
