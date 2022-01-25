@@ -7,29 +7,27 @@ use Carp;
 use English qw(-no_match_vars);
 use Path::Tiny qw(path);
 
-my $input  = 'README.src.md';
-my $ifh    = IO::File->new($input, 'r');
+my $input = 'README.src.md';
+my $ifh   = IO::File->new($input, 'r');
+defined $ifh || croak "$OS_ERROR: $input";
 my $output = 'README.md';
 my $ofh    = IO::File->new($output, 'w');
+defined $ofh || croak "$OS_ERROR: $output";
 
 say "Generating '$output' from '$input' and sources in 'src/'.";
-if (defined $ifh && defined $ofh) {
-    foreach my $line ($ifh->getlines) {
-        chomp $line;
-        if ($line =~ m/^\[\[(.*)\]\]$/xms) {
-            if (-e $1) {
-                $ofh->print(path($1)->slurp_utf8 . "\n");
-            } else {
-                croak $line;
-            }
+foreach my $line ($ifh->getlines) {
+    chomp $line;
+    if ($line =~ m/^\[\[(.*)\]\]$/xms) {
+        if (-e $1) {
+            $ofh->print(path($1)->slurp_utf8 . "\n");
         } else {
-            $ofh->print($line . "\n");
+            croak $line;
         }
+    } else {
+        $ofh->print($line . "\n");
     }
-    undef $ifh;
-} else {
-    croak "$OS_ERROR: $input OR $output";
 }
+undef $ifh;
 
-croak "$CHILD_ERROR: doctoc"
-  if system("doctoc --title '## contents' $output") != 0;
+system("doctoc --title '## contents' $output") == 0
+  || croak "$CHILD_ERROR: doctoc";
