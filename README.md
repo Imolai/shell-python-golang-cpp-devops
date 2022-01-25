@@ -46,7 +46,6 @@
 =pod
  this is a block comment
 =cut
-
 ```
 
 ### Python
@@ -58,7 +57,6 @@
 '''
 this is a block comment
 '''
-
 ```
 
 ### Go
@@ -73,7 +71,6 @@ func main() {
 	   this is a block comment
 	*/
 }
-
 ```
 
 **[⬆ back to top](#contents)**
@@ -97,7 +94,6 @@ use strict;
 use warnings;
 
 say 'DevOps ', 'is great!';
-
 ```
 
 ### Python
@@ -105,7 +101,6 @@ say 'DevOps ', 'is great!';
 ```python
 #!/usr/bin/env python
 print('DevOps', 'is great!')
-
 ```
 
 ### Go
@@ -120,7 +115,6 @@ import (
 func main() {
 	fmt.Println("DevOps ", "is great!")
 }
-
 ```
 
 **[⬆ back to top](#contents)**
@@ -154,7 +148,6 @@ if (defined $fh) {
 } else {
     croak "$OS_ERROR: 'test.txt'";
 }
-
 ```
 
 ### Python
@@ -170,7 +163,6 @@ try:
     [print(line, end="") for line in lines]
 except IOError as err:
   print(err, file=sys.stderr)
-
 ```
 
 ### Go
@@ -205,7 +197,6 @@ func main() {
 		fmt.Println(line)
 	}
 }
-
 ```
 
 **[⬆ back to top](#contents)**
