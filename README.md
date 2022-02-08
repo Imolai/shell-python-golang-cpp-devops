@@ -22,6 +22,7 @@
   - [perl](#perl-2)
   - [python](#python-2)
   - [go](#go-2)
+- [generating a random number](#generating-a-random-number)
 - [urls](#urls)
 - [license](#license)
 
@@ -201,9 +202,13 @@ func main() {
 
 **[⬆ back to top](#contents)**
 
+## generating a random number
+
 ## urls
 
+- <https://stackoverflow.com/a/1154355/17222624>
 - <https://golangprojectstructure.com/12-powerful-linux-bash-commands-with-go/>
+- <https://linuxhandbook.com/bash-automation/>
 - <https://wiki.python.org/moin/PerlPhrasebook>
 - <http://pleac.sourceforge.net/>
 - <https://github.com/miguelmota/golang-for-nodejs-developers>
