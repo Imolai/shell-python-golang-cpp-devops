@@ -31,6 +31,7 @@ foreach my $line ($ifh->getlines) {
   }
 }
 undef $ifh;
+undef $ofh;
 
-system("doctoc --title '## contents' $output") == 0
+system('doctoc', '--title', '## contents', $output) == 0
   || croak "$CHILD_ERROR: doctoc";

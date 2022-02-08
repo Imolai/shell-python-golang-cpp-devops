@@ -8,20 +8,20 @@
 ## contents
 
 - [comments](#comments)
-  - [Shell](#shell)
-  - [Perl](#perl)
-  - [Python](#python)
-  - [Go](#go)
+  - [shell](#shell)
+  - [perl](#perl)
+  - [python](#python)
+  - [go](#go)
 - [echo: printing](#echo-printing)
-  - [Shell](#shell-1)
-  - [Perl](#perl-1)
-  - [Python](#python-1)
-  - [Go](#go-1)
+  - [shell](#shell-1)
+  - [perl](#perl-1)
+  - [python](#python-1)
+  - [go](#go-1)
 - [cat: open and print a file](#cat-open-and-print-a-file)
-  - [Shell](#shell-2)
-  - [Perl](#perl-2)
-  - [Python](#python-2)
-  - [Go](#go-2)
+  - [shell](#shell-2)
+  - [perl](#perl-2)
+  - [python](#python-2)
+  - [go](#go-2)
 - [urls](#urls)
 - [license](#license)
 
@@ -31,13 +31,14 @@
 
 ---
 
-### Shell
+### shell
 
 ```bash
-# comment
+#!/bin/bash
+# this is a line comment
 ```
 
-### Perl
+### perl
 
 ```perl
 #!/usr/bin/env perl
@@ -48,7 +49,7 @@
 =cut
 ```
 
-### Python
+### python
 
 ```python
 #!/usr/bin/env python
@@ -59,7 +60,7 @@ this is a block comment
 '''
 ```
 
-### Go
+### go
 
 ```go
 package main
@@ -79,31 +80,29 @@ func main() {
 
 ---
 
-### Shell
+### shell
 
 ```bash
+#!/bin/bash
 echo "DevOps" "is great!"
 ```
 
-### Perl
+### perl
 
 ```perl
 #!/usr/bin/env perl
 use v5.10;
-use strict;
-use warnings;
-
 say 'DevOps ', 'is great!';
 ```
 
-### Python
+### python
 
 ```python
 #!/usr/bin/env python
 print('DevOps', 'is great!')
 ```
 
-### Go
+### go
 
 ```go
 package main
@@ -123,13 +122,14 @@ func main() {
 
 ---
 
-### Shell
+### shell
 
 ```bash
+#!/bin/bash
 cat test.txt
 ```
 
-### Perl
+### perl
 
 ```perl
 #!/usr/bin/env perl
@@ -150,7 +150,7 @@ if (defined $fh) {
 }
 ```
 
-### Python
+### python
 
 ```python
 #!/usr/bin/env python
@@ -165,7 +165,7 @@ except IOError as err:
   print(err, file=sys.stderr)
 ```
 
-### Go
+### go
 
 ```go
 package main

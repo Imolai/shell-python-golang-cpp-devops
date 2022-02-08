@@ -7,24 +7,23 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## contents
 
-- [Perl|Python|Go for DevOps](#perlpythongo-for-devops)
-  - [comments](#comments)
-    - [Shell](#shell)
-    - [Perl](#perl)
-    - [Python](#python)
-    - [Go](#go)
-  - [echo: printing](#echo-printing)
-    - [Shell](#shell-1)
-    - [Perl](#perl-1)
-    - [Python](#python-1)
-    - [Go](#go-1)
-  - [cat: open and print a file](#cat-open-and-print-a-file)
-    - [Shell](#shell-2)
-    - [Perl](#perl-2)
-    - [Python](#python-2)
-    - [Go](#go-2)
-  - [urls](#urls)
-  - [license](#license)
+- [comments](#comments)
+  - [shell](#shell)
+  - [perl](#perl)
+  - [python](#python)
+  - [go](#go)
+- [echo: printing](#echo-printing)
+  - [shell](#shell-1)
+  - [perl](#perl-1)
+  - [python](#python-1)
+  - [go](#go-1)
+- [cat: open and print a file](#cat-open-and-print-a-file)
+  - [shell](#shell-2)
+  - [perl](#perl-2)
+  - [python](#python-2)
+  - [go](#go-2)
+- [urls](#urls)
+- [license](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -32,25 +31,25 @@
 
 ---
 
-### Shell
+### shell
 
 ```bash
-# comment
+[[./src/comment.sh]]
 ```
 
-### Perl
+### perl
 
 ```perl
 [[./src/comment.pl]]
 ```
 
-### Python
+### python
 
 ```python
 [[./src/comment.py]]
 ```
 
-### Go
+### go
 
 ```go
 [[./src/comment.go]]
@@ -62,25 +61,25 @@
 
 ---
 
-### Shell
+### shell
 
 ```bash
-echo "DevOps" "is great!"
+[[./src/echo.sh]]
 ```
 
-### Perl
+### perl
 
 ```perl
 [[./src/echo.pl]]
 ```
 
-### Python
+### python
 
 ```python
 [[./src/echo.py]]
 ```
 
-### Go
+### go
 
 ```go
 [[./src/echo.go]]
@@ -92,25 +91,25 @@ echo "DevOps" "is great!"
 
 ---
 
-### Shell
+### shell
 
 ```bash
-cat test.txt
+[[./src/cat.sh]]
 ```
 
-### Perl
+### perl
 
 ```perl
 [[./src/cat.pl]]
 ```
 
-### Python
+### python
 
 ```python
 [[./src/cat.py]]
 ```
 
-### Go
+### go
 
 ```go
 [[./src/cat.go]]
