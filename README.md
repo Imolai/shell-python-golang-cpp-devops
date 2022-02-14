@@ -1,5 +1,5 @@
 
-# Perl|Python|Go for DevOps
+# Shell|Python|Go for DevOps
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -9,17 +9,14 @@
 
 - [comments](#comments)
   - [shell](#shell)
-  - [perl](#perl)
   - [python](#python)
   - [go](#go)
 - [echo: printing](#echo-printing)
   - [shell](#shell-1)
-  - [perl](#perl-1)
   - [python](#python-1)
   - [go](#go-1)
 - [cat: open and print a file](#cat-open-and-print-a-file)
   - [shell](#shell-2)
-  - [perl](#perl-2)
   - [python](#python-2)
   - [go](#go-2)
 - [generating a random number](#generating-a-random-number)
@@ -37,17 +34,6 @@
 ```bash
 #!/bin/bash
 # this is a line comment
-```
-
-### perl
-
-```perl
-#!/usr/bin/env perl
-# this is a line comment
-
-=pod
- this is a block comment
-=cut
 ```
 
 ### python
@@ -88,14 +74,6 @@ func main() {
 echo "DevOps" "is great!"
 ```
 
-### perl
-
-```perl
-#!/usr/bin/env perl
-use v5.10;
-say 'DevOps ', 'is great!';
-```
-
 ### python
 
 ```python
@@ -128,27 +106,6 @@ func main() {
 ```bash
 #!/bin/bash
 cat test.txt
-```
-
-### perl
-
-```perl
-#!/usr/bin/env perl
-use strict;
-use warnings;
-use IO::File;
-use Carp;
-use English qw(-no_match_vars);
-
-my $filename = 'test.txt';
-my $fh       = IO::File->new($filename, 'r');
-if (defined $fh) {
-    my @lines = $fh->getlines;
-    undef $fh;
-    print @lines;
-} else {
-    croak "$OS_ERROR: 'test.txt'";
-}
 ```
 
 ### python
@@ -209,8 +166,6 @@ func main() {
 - <https://stackoverflow.com/a/1154355/17222624>
 - <https://golangprojectstructure.com/12-powerful-linux-bash-commands-with-go/>
 - <https://linuxhandbook.com/bash-automation/>
-- <https://wiki.python.org/moin/PerlPhrasebook>
-- <http://pleac.sourceforge.net/>
 - <https://github.com/miguelmota/golang-for-nodejs-developers>
 
 **[⬆ back to top](#contents)**
