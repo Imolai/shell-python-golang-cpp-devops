@@ -1,5 +1,5 @@
 
-# Shell|Python|Go for DevOps
+# Shell|Python|Go|C++ for DevOps
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -45,6 +45,12 @@
 
 ```go
 [[./src/comment.go]]
+```
+
+### cpp
+
+```cpp
+[[./src/comment.cpp]]
 ```
 
 **[⬆ back to top](#contents)**

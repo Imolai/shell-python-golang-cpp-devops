@@ -1,5 +1,5 @@
 
-# Shell|Python|Go for DevOps
+# Shell|Python|Go|C++ for DevOps
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
@@ -58,6 +58,20 @@ func main() {
 	/*
 	   this is a block comment
 	*/
+}
+```
+
+### cpp
+
+```cpp
+int main()
+{
+        // this is a line comment
+
+        /*
+           this is a block comment
+        */
+        return 0;
 }
 ```
 
