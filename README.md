@@ -11,6 +11,7 @@
   - [shell](#shell)
   - [python](#python)
   - [go](#go)
+  - [cpp](#cpp)
 - [echo: printing](#echo-printing)
   - [shell](#shell-1)
   - [python](#python-1)
